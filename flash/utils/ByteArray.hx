@@ -497,8 +497,9 @@ class ByteArray implements ArrayAccess<Int> {
 		return value;
 	}
 	
-	
+	public function toString() : String {
+		return readUTFBytes(length);
+	}
 }
-
 
 #end
